@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./Css/Style.css">
+  <title>تور ها </title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="w-100 ">
+      <!-- Navbar -->
+        <nav class="navbar navbar-header navbar-expand-lg   fixed-top  font-weight-bolder ">
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="./Index.html"><img class="w-25 float-right logo" src="./images/logo_prev_ui.png" alt=""></a>
+            <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
+              <span class="navbar-toggler-icon"><i class="fa fa-list text-primary" aria-hidden="true"></i></span>
+            </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                  <li class="nav-item">
+                    <a href="./Index.html" class="nav-link active nav-link-top ml-3" style="color:#000000"> خانه</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Gallery.html" class="nav-link nav-link-top ml-3" style="color:#000000"> گالری</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Tour.html" class="nav-link nav-link-top ml-3" style="color:#233765;"> تور</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Ticket.html" class="nav-link nav-link-top ml-3" style="color:#000000">  بلیط های من</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./About.html" class="nav-link nav-link-top ml-3" style="color:#000000"> درباره ما</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>  
+          <div class="container">
+            <div class="header-title">
+                <h1>    سفر خود را با ما تجربه کنید  </h1>     
+            </div> 
+          </div>         
+    </header>  
+    <!-- Main -->
+    <main>
+          <!-- Tour Table -->
+          <div class="container">
+            <div class="table-responsive mt-5"> <!-- Added table-responsive here -->
+                <table class="table table-image table-striped">
+                    <thead class="thead-bg text-center">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">گالری</th>
+                            <th scope="col">تور</th>
+                            <th scope="col">تاریخ پرواز</th>
+                            <th scope="col">قیمت</th>
+                            <th scope="col">جزییات</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td class="w-25">
+                                <img src="./images/4.jpg" class="img-fluid t_img" alt="Paris_Image">
+                            </td>
+                            <td class="t_td">پاریس</td>
+                            <td class="t_td">1402/9/9</td>
+                            <td class="t_td">9,500,000</td>
+                            <td class="t_td"><a href="./Detail.html" class="text-decoration-none btn-visit">مشاهده</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td class="w-25">
+                                <img src="./images/20.jpg" class="img-fluid t_img" alt="Brazil">
+                            </td>
+                            <td class="t_td">برزیل</td>
+                            <td class="t_td">1402/10/10</td>
+                            <td class="t_td">8,000,000</td>
+                            <td><a href="./Detail.html" class="text-decoration-none btn-visit">مشاهده</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td class="w-25">
+                                <img src="./images/19.jpg" class="img-fluid t_img" alt="Italy">
+                            </td>
+                            <td class="t_td">ایتالیا</td>
+                            <td class="t_td">1402/10/2</td>
+                            <td class="t_td">6,000,000</td>
+                            <td><a href="./Detail.html" class="text-decoration-none btn-visit">مشاهده</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>
+                                <img src="./images/27.jpg" class="img-fluid t_img" alt="Malay">
+                            </td>
+                            <td class="t_td">مالزی</td>
+                            <td class="t_td">1402/10/10</td>
+                            <td class="t_td">7,000,000</td>
+                            <td><a href="./Detail.html" class="text-decoration-none btn-visit">مشاهده</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+
+         <!-- Pagination -->
+         <div class="row ">
+          <div class="col">
+              <ul class="pagination justify-content-center mb-5 mt-5">
+                  <li><a href="./Gallery.html" class="page-link ">&laquo;</a></li>
+                  <li><a href="./Index.html" class="page-link ">1</a></li>
+                  <li><a href="./Gallery.html" class="page-link" >2</a></li>
+                  <li><a href="./Tour.html" class="page-link active bg-primary text-white">3</a></li>
+                  <li><a href="./About.html" class="page-link">4</a></li>
+                  <li><a href="./About.html" class="page-link ">&raquo;</a></li>
+      
+              </ul>
+          </div>
+         </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center " style="background-color: rgba(27, 27, 27, 0.968);">
+      <div class="container m-auto  p-4">    
+          <!-- Logo -->
+          <!-- <section class="mt-1">
+            <a  href="./Index.html"><img class=" text-center " src="./images/logo_prev_ui.png"  alt="Agenc_Logo" style="width: 120px;height: 120px;"></a>
+          </section> -->
+
+      <!-- News -->
+        <section >        
+          <div class="container ">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4">
+                  <!-- Submit button -->
+                  <button data-mdb-ripple-init type="submit" class="btn btn-outline-success  text-white font-type_n mt-2 ">
+                    عضویت در خبرنامه
+                  </button>
+                </div>
+              <div class="col-sm-12 col-lg-4">
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline ">
+                    <input type="email" id="form5Example24" class="form-control mt-2"  style="  background-color:#eceeefce;"/>
+                  </div>
+                </div>
+              <div class="col-sm-12 col-lg-4">
+                <p class="mt-2 font-type_n text-white">
+                برای اطلاع از تورهای جدید ایمیل خود را وارد کنید
+                </p>
+              </div>
+            </div>   
+          </div>      
+        </section>
+      <!-- Map -->
+        <section class="mb-5 mt-5 ">
+          <iframe class="w-100 m-auto"  src="https://map.ir/lat/35.749/lng/51.334/z/16/p/ آژانس مسافرتی ما اینجاست"
+          frameborder="0" style="height: 200px; border: 1px solid #ccc;"></iframe>
+        </section>
+      <!-- Social media -->
+      <section class=" m-auto social-icons">
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn " href="#!" role="button"
+          ><i class="fab fa-instagram  text-danger "></i
+        ></a>
+
+        <!-- telegram -->
+        <a data-mdb-ripple-init class="btn " href="#!" role="button"
+          ><i class="fab fa-telegram text-primary "></i
+        ></a>
+
+        <!-- whatsapp -->
+        <a data-mdb-ripple-init class="btn " href="#!" role="button"
+          ><i class="fab fa-whatsapp  text-success "></i
+        ></a>
+      </section>  
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3  text-white copyright-text" style="background-color: rgba(0, 0, 0, 0.49);">
+          &copy; 2014 تمامی حقوق مادی و معنوی این وب سایت متعلق به سفر رویایی می باشد.
+      </div>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
