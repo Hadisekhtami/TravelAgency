@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <title>رزرو تور | آژانس هواپیمایی سفر رویایی </title>
+    <style>
+      header {
+    min-height: 100vh;
+    padding-top: 7rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/24.png) center/cover no-repeat;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+      <!-- Header -->
+    <header class="w-100 ">
+        <nav class="navbar navbar-header navbar-expand-lg   fixed-top  font-weight-bolder ">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="./Index.html"><img class="w-25 float-right logo" src="./images/logo_prev_ui.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon "><i class="fa fa-list text-primary"></i> </span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                  <li class="nav-item">
+                    <a href="./Index.html" class="nav-link active nav-link-top  ml-5"style="color:#000000" > خانه</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Gallery.html" class="nav-link nav-link-top  ml-5" style="color:#000000"> گالری</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Tour.html" class="nav-link nav-link-top  ml-5" style="color:#000000"> تور</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./About.html" class="nav-link nav-link-top  ml-5" style="color:#000000"> درباره ما</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./Ticket.html" class="nav-link nav-link-top  ml-5" style="color:#000000">  بلیط های من</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+        </nav>  
+          <div class="container">
+            <div class="header-title ">
+                <h1 class="text-light" >    سفر خود را با ما تجربه کنید  </h1>     
+            </div>
+          </div>          
+    </header>
+
+    <!-- Main -->
+    <main>
+      <h2 class="title mb-5 border-start  border-danger border-3 p-3 mt-5 mr-5">  اطلاعات پرواز </h2>             
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col">
+          <table class="table table-image mt-2 mb-5 w-75 m-auto">
+            <thead class="titr text-center  text-nowrap  thead-bg" >
+              <tr>
+                <th scope="col" class="p-3 reserve-tbl" ></th>
+                <th scope="col" class="p-3 reserve-tbl"> تور</th>
+                <th scope="col" class="p-3 reserve-tbl"> تاریخ پرواز</th>
+                <th scope="col" class="p-3 reserve-tbl"> تاریخ برگشت</th>
+                <th scope="col" class="p-3 reserve-tbl">  قیمت</th>
+                <th scope="col" class="p-3 reserve-tbl">  </th>
+  
+  
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <th scope="row">1</th>
+                
+                <td>پاریس</td>
+                <td>1402/9/9</td>
+                <td>1402/9/19</td>
+  
+                <td>9,500,000 </td>
+                <td><button type="button"  class="btn btn-success" data-toggle="modal" data-target="#myModal"> رزرو</button>
+                </td>
+  
+              </tr> 
+            </tbody>
+          </table>   
+          </div>
+        </div>
+      </div>
+    </main>
+   
+    <!-- Modal -->
+    <div class="container">    
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close text-danger" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title m-auto text-info font-type-b">  آژانس هواپیمایی سفر رویایی </h4>
+              </div>
+              <div class="modal-body">
+                <p class="text-success float-right font-type_n">  رزرو   شما  با موفقیت انجام شد. </p>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+    </div>
+
+  <!-- Footer -->
+    <footer class="text-center " style="background-color: rgba(27, 27, 27, 0.968);">
+      <div class="container m-auto  p-4">    
+          <!-- Logo -->
+          <!-- <section class="mt-1">
+            <a  href="./Index.html"><img class=" text-center " src="./images/logo_prev_ui.png"  alt="Agenc_Logo" style="width: 120px;height: 120px;"></a>
+          </section> -->
+
+      <!-- News -->
+        <section >        
+          <div class="container ">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4">
+                  <!-- Submit button -->
+                  <button data-mdb-ripple-init type="submit" class="btn btn-outline-success  text-white font-type_n mt-2 ">
+                    عضویت در خبرنامه
+                  </button>
+                </div>
+              <div class="col-sm-12 col-lg-4">
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline ">
+                    <input type="email" id="form5Example24" class="form-control mt-2"  style="  background-color:#eceeefce;"/>
+                  </div>
+                </div>
+              <div class="col-sm-12 col-lg-4">
+                <p class="mt-2 font-type_n text-white">
+                برای اطلاع از تورهای جدید ایمیل خود را وارد کنید
+                </p>
+              </div>
+            </div>   
+          </div>      
+        </section>
+      <!-- Map -->
+        <section class="mb-5 mt-5 ">
+          <iframe class="w-100 m-auto"  src="https://map.ir/lat/35.749/lng/51.334/z/16/p/ آژانس مسافرتی ما اینجاست"
+          frameborder="0" style="height: 200px; border: 1px solid #ccc;"></iframe>
+        </section>
+      <!-- Social media -->
+      <section class=" m-auto social-icons">
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn " href="#!" role="button"
+          ><i class="fab fa-instagram  text-danger "></i
+        ></a>
+
+        <!-- telegram -->
+        <a data-mdb-ripple-init class="btn " href="#!" role="button"
+          ><i class="fab fa-telegram text-primary "></i
+        ></a>
+
+        <!-- whatsapp -->
+        <a data-mdb-ripple-init class="btn " href="#!" role="button"
+          ><i class="fab fa-whatsapp  text-success "></i
+        ></a>
+      </section>  
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3  text-white copyright-text" style="background-color: rgba(0, 0, 0, 0.49);">
+          &copy; 2014 تمامی حقوق مادی و معنوی این وب سایت متعلق به سفر رویایی می باشد.
+      </div>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+</body>
+</html>
