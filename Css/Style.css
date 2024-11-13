@@ -1,0 +1,281 @@
+@import 'Ticket.css';
+@import 'zoom.css';
+
+/* general */
+*{
+    font-size: 18px;
+    text-decoration: none!important;
+}
+.font-type-b{
+    font-family: 'B Titr';
+}
+.font-type_n{
+    font-family: 'B Nazanin';
+}
+.title {
+    font-family: 'B Titr'!important;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+/* header */
+
+header {
+    min-height: 100vh;
+    padding-top: 7rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner1.jpg) center/cover no-repeat;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+.header-title{
+    font-family: 'B Titr';
+}
+/*Title header*/
+.header-title h1 {
+    animation: bounce-in-top 2.1s both;
+    margin-top: 20%;
+    font-size: 2rem;
+}
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in-out;
+        opacity: 0;
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    55% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in-out;
+    }
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-in-out;
+    }
+    81% {
+        transform: translateY(-58px);
+        animation-timing-function: ease-in-out;
+    }
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-in-out;
+    }
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+
+
+/*Navbar*/
+.navbar-header {
+    font-family: 'B Titr';
+    background-color: rgba(237, 237, 237, 0.904);
+    opacity: 0.95;
+    white-space: nowrap;
+}
+.nav-link-top:hover {
+    position: relative;
+    padding: 10px;
+    z-index: 1;    
+}
+.nav-link-top:hover::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* ارتفاع خط مرز */
+    background: linear-gradient(to right, rgba(251, 77, 2, 0.699), rgba(225, 224, 238, 0.65), rgba(0, 146, 237, 0.699));
+    z-index: -1; /* قرار دادن خط در پشت عنصر اصلی */
+}
+.btn-register {
+    font-size: 1rem ;
+    white-space: nowrap;
+}
+.search {
+    font-size: 1rem ;
+    white-space: nowrap;
+    background-color: rgba(237, 237, 237, 0.904);
+}
+
+/* Favorite Tours */
+.overlay {
+    position: absolute;
+    top: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255); /* شفافیت پس زمینه */
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.position-relative:hover .overlay {
+    opacity: 0.8; /* نمایش متن در هنگام هاور */
+}
+.overlay p{
+    font-family: 'B Nazanin';
+     font-size: 1.3rem;
+}
+
+
+/*Comments*/
+.card-title {
+    font-family: 'B Titr';
+    font-size: 1.1rem;
+}
+.line {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(251, 77, 2, 0.922), rgba(225, 224, 238, 0.65), rgba(0, 146, 237, 0.801));
+}
+.card-text {
+    font-family: 'B Nazanin';
+    font-size: 1.2rem;
+    line-height: 31px;
+}
+
+.card-img-pro {
+    border-radius: 100% 10% 100% 50%/ 37% 56% 44% 3%;
+    width: 65px;
+    height: 65px;
+}
+.card-img-pro:hover {
+opacity: 0.9;
+}
+
+/*gallery*/
+.zoom{
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.zoom:hover {
+    animation:gallery-animation 2.5s both; ;
+}
+@keyframes gallery-animation {
+    0% {
+        transform: scale(1.1);
+        animation-timing-function: ease-in-out;
+        opacity: 0;
+    }
+    /* 50% {
+        transform: scale(1.2);
+        animation-timing-function: ease-in-out;
+        opacity: 50;
+    } */
+    100% {
+        transform: scale(1.2);
+        animation-timing-function: ease-in-out;
+        opacity: 100;
+    }
+}
+.card-img-top {
+    border-radius: 100% 10% 100% 50%/ 37% 56% 44% 30%;
+}
+
+/* Tour */
+.thead-bg{
+    background-image: linear-gradient(to right, rgba(251, 77, 2, 0.699), rgba(225, 224, 238, 0.65), rgba(0, 146, 237, 0.699));
+    font-family: 'B Titr';
+}
+td{
+    font-family: 'B Nazanin';
+    font-size: 1.1rem!important; ;
+}
+.btn-visit{
+    font-size: 1.2rem;
+}
+.table-responsive {
+    overflow-x: auto; /* Adding horizontal scroll if needed */
+}
+.t_img {
+    max-width: 100%; 
+    height: auto;   
+}
+
+
+/* Footer */
+.social-icons a{
+    background-color:#eceeefce;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    
+  }
+  .copyright-text{
+    font-family: 'B Nazanin';
+    font-size: 1.2rem;
+    
+  }
+
+
+/* Adjusting for small devices */
+@media (max-width: 576px) {
+    .table th{
+        font-size: 0.8rem; 
+    }
+    .t_td{
+        font-size: 1.1rem!important;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+.overlay{
+    width: 100%;
+    height: 100%;
+}
+ .overlay .reserve-txt
+{
+    width: 50%;
+    height: 100%;
+}
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in-out;
+        opacity: 0;
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    55% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in-out;
+    }
+   
+    100% {
+        transform: translateY(100px);
+        animation-timing-function: ease-in-out;
+    }
+}
+}
+@media only screen and (max-width: 1200px) {
+    .logo
+
+    {
+        width: 120px!important;
+    }
+  .navbar-nav
+  {
+    right: 150px!important;
+  }
+}
