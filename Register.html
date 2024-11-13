@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <title> ثبت نام | آژانس مسافرتی سفر رویایی </title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'B Titr';
+    }
+    body{
+        min-height: 100vh;
+        background: url('./images/airplane.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .container {
+    position: relative;
+    width: 400px;
+    }
+    .txt{
+        color: #004668;
+    }
+    .login-box {
+        background-color: #e0f0f0;
+        box-shadow: 0 0 10px #e0f0f0(180, 180, 180, 0.5);
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px;
+        font-family: 'B Nazanin';
+        background-color: #e0f0f008;
+        border: 1px solid #004568c3;
+    
+    }
+</style>
+
+<body class="d-flex  justify-content-center align-items-center">
+    <!-- Register -->
+    <div class="container justify-content-center align-items-center">
+        <div class="login-box p-3 rounded-3" style="background:balck">
+            <h3 class="text-center mb-4 txt">فرم ثبت نام</h3>
+            <form>
+                <div class="input-group mb-2">
+                    <label class="d-block mb-1 txt" for="username">نام کاربری</label>
+                    <input type="text" id="username" placeholder="نام کاربری را وارد کنید" class="rounded m-2">
+                </div>
+                <div class="input-group mb-2">
+                    <label class="d-block mb-1 txt" for="email">ایمیل</label>
+                    <input type="email" id="email"  class="rounded-2 m-2">
+                </div>
+                <div class="input-group mb-2">
+                    <label class="d-block mb-1 txt" for="password">پسورد</label>
+                    <input type="password" id="password" placeholder="رمز عبور را وارد کنید" class=" rounded m-2 mb-3">
+                </div>
+                <button type="button" class="btn btn-success  w-50   d-block m-auto"><a href="./Login.html" class="text-white">ثبت نام</a></button>
+                <br>
+                <button type="button" class="btn btn-primary  w-50   d-block m-auto"><a href="./Index.html" class="text-white">ورود</a></b>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
